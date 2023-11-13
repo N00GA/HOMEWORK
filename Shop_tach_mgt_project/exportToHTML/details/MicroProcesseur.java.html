@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>MicroProcesseur.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MicroProcesseur.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">details</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">Enumerations</span><span class="s2">.</span><span class="s1">Processortype</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">MicroProcesseur </span><span class="s2">{</span>
+    <span class="s3">//attributes</span>
+    <span class="s0">private double </span><span class="s1">vitesse</span><span class="s2">;</span>
+    <span class="s0">private double </span><span class="s1">NbreCorps</span><span class="s2">;</span>
+    <span class="s0">private int </span><span class="s1">performacemarque</span><span class="s2">;</span>
+    <span class="s0">private double </span><span class="s1">ProcessorPerformance</span><span class="s2">;</span>
+    <span class="s0">private final </span><span class="s1">Processortype Marque</span><span class="s2">=</span><span class="s1">Processortype</span><span class="s2">.</span><span class="s1">other</span><span class="s2">;</span>
+    <span class="s3">// methode</span>
+    <span class="s0">public void </span><span class="s1">SetMarqueperformance</span><span class="s2">(){</span>
+        <span class="s0">if</span><span class="s2">(</span><span class="s1">Marque</span><span class="s2">==</span><span class="s1">Processortype</span><span class="s2">.</span><span class="s1">dragon</span><span class="s2">)</span>
+            <span class="s1">performacemarque</span><span class="s2">=</span><span class="s4">50</span><span class="s2">;</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">Marque</span><span class="s2">==</span><span class="s1">Processortype</span><span class="s2">.</span><span class="s1">intel</span><span class="s2">)</span>
+            <span class="s1">performacemarque</span><span class="s2">=</span><span class="s4">40</span><span class="s2">;</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">Marque</span><span class="s2">==</span><span class="s1">Processortype</span><span class="s2">.</span><span class="s1">AMD</span><span class="s2">)</span>
+            <span class="s1">performacemarque</span><span class="s2">=</span><span class="s4">30</span><span class="s2">;</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">Marque</span><span class="s2">==</span><span class="s1">Processortype</span><span class="s2">.</span><span class="s1">celeron</span><span class="s2">)</span>
+            <span class="s1">performacemarque</span><span class="s2">=</span><span class="s4">20</span><span class="s2">;</span>
+        <span class="s0">else</span>
+            <span class="s1">performacemarque</span><span class="s2">=</span><span class="s4">10</span><span class="s2">;</span>
+    <span class="s2">}</span>
+    <span class="s0">public void </span><span class="s1">ProcessorPerformance</span><span class="s2">(){</span>
+
+        <span class="s1">ProcessorPerformance</span><span class="s2">=(</span><span class="s4">0.6</span><span class="s2">*</span><span class="s1">vitesse</span><span class="s2">*</span><span class="s1">NbreCorps</span><span class="s2">)+(</span><span class="s4">0.4</span><span class="s2">*</span><span class="s1">performacemarque</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
